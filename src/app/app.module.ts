@@ -10,12 +10,14 @@ import { FormsModule } from '@angular/forms';
 //my components
 import {LoginComponent} from './components/login/login.component';
 import {SignupComponent} from './components/signup/signup.component';
+import {HomeComponent} from './components/home/home.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent
   ],
 
   imports: [
