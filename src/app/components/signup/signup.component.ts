@@ -10,8 +10,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class SignupComponent {
   public model: any;
   private userService: UserService;
-  private router: Router;
-  constructor() {
+  constructor(private router: Router) {
      this.model = {};
      this.userService = new UserService();
      
@@ -20,7 +19,7 @@ export class SignupComponent {
   public createUser() {
     if(this.userService.setUser(this.model)) {
       alert("Sign up successfull");
-      this.router.navigate(['/signin']);
+      this.router.navigate(['/login']);
     } else {
       alert("falied to register user");
     }
