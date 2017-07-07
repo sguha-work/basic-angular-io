@@ -4,22 +4,22 @@
         <table>
             <tr>
                 <td>Enter name</td>
-                <td><input type="text"></td>
+                <td><input type="text" name="name" [(ngModel)]="model.name" autocomplete="on"></td>
             </tr>
             <tr>
                 <td>Enter email</td>
-                <td><input type="text"></td>
+                <td><input type="text" name="email" [(ngModel)]="model.email" autocomplete="on"></td>
             </tr>
             <tr>
                 <td>Enter password</td>
-                <td><input type="password"></td>
+                <td><input type="password" name="password" [(ngModel)]="model.password"></td>
             </tr>
             <tr>
                 <td>confirm password</td>
                 <td><input type="password"></td>
             </tr>
         </table>
-        <button>Click me to signup</button>
+        <button (click)="createUser()">Click me to signup</button>
     </form>
-    <p></p>
+    <p>Already a member? <a routerLink="/login">click here to login</a></p>
 </div>

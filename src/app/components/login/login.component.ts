@@ -13,7 +13,7 @@ export class LoginComponent {
   constructor(private route: ActivatedRoute, private router: Router) {
   }
 
-  gotosignup() {alert("xy");
+  gotosignup() {
     this.router.navigateByUrl('/signup');
   }
   
