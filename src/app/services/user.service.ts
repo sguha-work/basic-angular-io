@@ -4,8 +4,11 @@ import {User} from './data/user.data';
 export class UserService {
     public static users: Array<User>;
 
-    constructor() { 
-        UserService.users = [];
+    constructor() {
+        if(typeof UserService.users === "undefined") {
+            UserService.users = [];
+        } 
+        
     }
 
     public getUser(email: string): any {
