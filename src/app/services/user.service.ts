@@ -13,6 +13,7 @@ export class UserService {
 
     public getUser(email: string): any {
         let user: any;
+        user = {};
         for(let index in UserService.users) {
             if(UserService.users[index].email === email) {
                 user = UserService.users[index];
