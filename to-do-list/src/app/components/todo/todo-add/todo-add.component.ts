@@ -7,6 +7,6 @@ import {Component} from '@angular/core';
 export class ToDoAdd {
     public model: any;
     constructor() {
-        alert("todo add");
+        this.model = {};
     }
 }

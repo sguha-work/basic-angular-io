@@ -6,6 +6,5 @@ import {ToDoAdd} from './todo-add/todo-add.component';
 })
 export class ToDo {
     constructor(){
-        alert("todo");
     }
 }
