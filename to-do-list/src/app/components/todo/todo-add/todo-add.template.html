@@ -1,0 +1,14 @@
+<div>
+    <h3>Add to do by filling this form and clicking add button</h3>
+    <table>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" [(ngModel)]="model.title" /></td>
+            <td>Description</td>
+            <td><textarea [(ngModel)]="model.description" name="description"></textarea></td>
+            <td>Time</td>
+            <td><input type="text" [(ngModel)]="model.time" name="time" /></td>
+        </tr>
+    </table>
+    <button>Click me to add todo</button>
+</div>
